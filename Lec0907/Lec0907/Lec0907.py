@@ -11,7 +11,7 @@ c=['Life','is','too','short']
 d=[1,2,'Life','is']
 e=[1,2,['Life','is']]
 print(e[2][0])
-f=b+c #+는 배열 합치기
+f=b+c
 print(b+c)
 print(f)
 print(b*3)
@@ -50,7 +50,7 @@ data.insert(8,['name3','0103'])
 print(data)
 print('\n')
 
-#for문 이용    들여쓰기중요!!!!!!!!!
+#for문 이용
 nEntries = len(data)
 print(nEntries)
 for d in range(3):
@@ -65,48 +65,10 @@ scores=[85,65,62,63,45,90,75]
 print(scores)
 scores.sort()
 print(scores)
-#top3 top5출력_reverse하면 더 편하다
+#top3 top5출력
 scores.reverse()
 top3=scores[0:3]
 print(top3)
 top5=scores[0:5]
 print(top5)
 print(scores)
-print('\n')
-
-#list 안에 list인지 확인
-for steps in data:
-    if isinstance(steps,list):  #if문도 들여쓰기 중요
-        for step in steps:
-            print(step)
-    else:
-        print(steps)
-print('\n')
-
-#리스트 요소 액세스
-print(scores)
-num=scores.pop()
-print(num)
-num=scores.pop(2)
-print(num)
-num=scores.count(90)
-print(num)
-scores.extend([50,60])
-print(scores)
-scores.append(75)
-print(scores)
-print('\n')
-
-#Tuple
-t1=()
-t2=(1,)
-t2_=(1)
-t3=(1,2,3)
-t4=1,2,3
-t5=('a','b',('ab','cd'))
-print(t1)
-print(t2)
-print(t2_)
-print(t3)
-print(t4)
-print(t5)
