@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>
+	<song>
+		<title> Á¦¹ß </title>
+		<length>4:54</length>
+	</song>
+	<song>
+		<title> Ã»È¥</title>
+		<length>3:21</length>
+	</song>
+</test>
