@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Stylesheet1.css')}}"
+</head>
+<body>
+    {% block body %}
+    {% if name %}
+    <h1>
+        Hello World!!!!{{name}},{{name2}}
+    </h1>
+    {% else %}
+    <h1>
+        Hello World!!!!
+    </h1>
+    {% endif %}
+    {% endblock %}
+    {% for item in items %}
+    <li><a href="{{item.href}}">{{item.caption}}</a></li>
+    {% endfor %}
+</body>
+</html>
